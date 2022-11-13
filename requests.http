@@ -1,0 +1,143 @@
+###
+POST http://localhost:5000/tp HTTP/1.1
+Content-Type: application/json
+
+{
+
+    "nombre"  : "matematicas",
+    "ensayo"  : "mate ",
+    "articulo": "programando",
+    "monografia": "simple",
+    "trabajo_final_pre": "si",
+    "trabajo_final_esp": "no",
+    "fecha_update": "01/01/01"
+}
+  
+
+###
+GET http://localhost:5000/universidad HTTP/1.1
+
+
+###
+POST http://localhost:5000/un HTTP/1.1
+Content-Type: application/json
+
+{
+
+    "nombre"  : "univalle",
+    "direccion"  : "sede menga",
+    "telefono"  : "2512365"
+}
+
+
+###
+PUT http://localhost:5000/tp/6363c3ef2128cac163a7d4dc HTTP/1.1
+Content-Type: application/json
+
+{
+
+    "nombre"  : "universidad del valle",
+    "direccion"  : "sede menga",
+    "telefono"  : "2512365"
+}
+
+
+
+
+###
+PUT http://localhost:5000/tp/6363d8598fc5529a79117f7a HTTP/1.1
+Content-Type: application/json
+
+{
+
+     "nombre": "evaluacion de ingles",
+    "ensayo": "english ",
+    "articulo": "HABLANDO",
+    "monografia": "simple",
+    "trabajo_final_pre": "si",
+    "trabajo_final_esp": "no"
+}
+
+
+###
+POST http://localhost:5000/et HTTP/1.1
+Content-Type: application/json
+
+{
+
+    "nombre"  : "matematicas",
+    "anteproyecto"  : "mate ",
+    "entregaparcial1": "programando",
+    "entregaparcial2": "simple",
+    "entregafinal": "si"
+   
+}
+
+
+###
+PUT http://localhost:5000/et/6363e5e63adf3fd4a896f71f HTTP/1.1
+Content-Type: application/json
+
+{
+
+     "nombre"  : "matematicas",
+    "anteproyecto"  : "mis matematicas ",
+    "ent_parcial1": "calculando",
+    "ent_parcial2": "simple",
+    "ent_final": "si"
+}
+  
+
+
+###
+POST http://localhost:5000/proyecto HTTP/1.1
+Content-Type: application/json
+
+{
+
+   "numero":5,
+   "titulo": "tecnicos",
+   "fecha_inicio":"01/01/01",
+"fecha_entrega": "01/01/01",
+   "valor": 50000,
+   "cliente":{
+    "_id": "6363c3b1c1b29208d73a6a42"
+    },
+
+    "tipo_proyecto": {
+    "_id": "6363d8598fc5529a79117f7a"
+    },
+    "universidad": {
+    "_id": "6364451efa15d4889a832ae5"
+    },
+    "etapa_proyecto": {
+    "_id": "6363e5e63adf3fd4a896f71f"
+    }
+   
+}
+
+###
+GET http://localhost:5000/proyecto HTTP/1.1
+
+
+###
+PUT http://localhost:5000/pr/6363f0146ff73afe5bef8f8e HTTP/1.1
+Content-Type: application/json
+
+{
+
+  
+   "titulo": "PROFESIONALES",
+   "fecha_inicio":"01/01/01",
+"fecha_entrega": "01/01/01",
+   "valor": 550000,
+   "cliente":"JOSE MARTI",
+
+    "tipo_proyecto": "prueba",
+    "universidad": "santiago de cali",
+    "etapa_proyecto": "iniciando"
+   
+}
+
+
+    
